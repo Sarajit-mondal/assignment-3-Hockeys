@@ -4,11 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- header section starts -->
     <header>
-      <nav></nav>
+      <!-- nav bars -->
+      <nav class="flex justify-between items-center py-5 my-10">
+        <!-- logo -->
+        <div class="flex items-center space-x-4">
+          <div class="md:hidden">
+            <i class="fa-solid fa-bars text-black"></i>
+          </div>
+          <h1>Hocky <span class="text-primary_color">’</span>s</h1>
+        </div>
+        <!-- pages -->
+        <ul class="hidden md:flex md:gap-x-5 lg:gap-x-11">
+          <li><a href="#" class="text-primary_color">Home</a></li>
+          <li><a href="#">absolute</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+
+        <!-- search and getitem -->
+        <div class="flex gap-x-6 items-center">
+          <div class="hidden lg:flex">
+            <i class="fa-solid fa-magnifying-glass text-gray"></i>
+          </div>
+
+          <button class="btn-p">Get Ticket</button>
+        </div>
+      </nav>
 
       <!-- banner section -->
       <!-- <div>
