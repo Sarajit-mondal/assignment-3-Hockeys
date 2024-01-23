@@ -18,16 +18,20 @@
     <!-- header section starts -->
     <header>
       <!-- nav bars -->
-      <nav class="flex justify-between items-center py-5 my-10">
+      <nav class="flex justify-between items-center py-5 my-6">
         <!-- logo -->
         <div class="flex items-center space-x-4">
-          <div class="md:hidden">
+          <div id="menu" class="md:hidden">
             <i class="fa-solid fa-bars text-black"></i>
           </div>
           <h1>Hocky <span class="text-primary_color">’</span>s</h1>
         </div>
+
         <!-- pages -->
-        <ul class="hidden md:flex md:gap-x-5 lg:gap-x-11">
+        <ul
+          id="nav-page"
+          class="absolute top-20 text-center w-1/6 bg-light_color h-full space-y-5 pt-5 active md:justify-center md:space-y-0 md:top-0 md:pt-0 ease-in-out duration-500 md:relative md:flex md:gap-x-5 lg:gap-x-10"
+        >
           <li><a href="#" class="text-primary_color">Home</a></li>
           <li><a href="#">absolute</a></li>
           <li><a href="#">Pages</a></li>
@@ -37,7 +41,7 @@
 
         <!-- search and getitem -->
         <div class="flex gap-x-6 items-center">
-          <div class="hidden lg:flex">
+          <div class="hidden md:flex">
             <i class="fa-solid fa-magnifying-glass text-gray"></i>
           </div>
 
@@ -108,5 +112,19 @@
     <!-- footer section starts  -->
     <footer></footer>
     <!-- footer section end  -->
+
+    <script>
+      const navPages = document.getElementById("nav-page");
+      const pages = document.querySelectorAll("#nav-page li");
+      document.getElementById("menu").addEventListener("click", () => {
+        navPages.classList.toggle("active");
+      });
+
+      pages.forEach((page) => {
+        page.addEventListener("click", () => {
+          navPages.classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>

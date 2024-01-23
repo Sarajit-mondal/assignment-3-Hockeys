@@ -29,6 +29,10 @@
 
 @layer components {
   .btn-p {
-    @apply py-2 px-5 text-light_color text-xl font-bold bg-primary_color rounded-xl;
+    @apply text-base py-2 px-4  text-light_color md:text-xl font-bold bg-primary_color rounded-xl;
+  }
+
+  .active {
+    @apply -translate-x-[500px] md:-translate-x-0;
   }
 }
