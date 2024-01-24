@@ -2125,16 +2125,32 @@ details.collapse summary::-webkit-details-marker{
   bottom: 0px;
 }
 
-.bottom-10{
-  bottom: 2.5rem;
+.bottom-7{
+  bottom: 1.75rem;
 }
 
-.left-10{
-  left: 2.5rem;
+.left-7{
+  left: 1.75rem;
 }
 
 .top-20{
   top: 5rem;
+}
+
+.bottom-\[10\%\]{
+  bottom: 10%;
+}
+
+.left-\[10\%\]{
+  left: 10%;
+}
+
+.bottom-\[6\%\]{
+  bottom: 6%;
+}
+
+.left-\[6\%\]{
+  left: 6%;
 }
 
 .z-10{
@@ -2159,14 +2175,14 @@ details.collapse summary::-webkit-details-marker{
   margin-bottom: 4rem;
 }
 
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-32{
@@ -2179,6 +2195,14 @@ details.collapse summary::-webkit-details-marker{
 
 .mb-5{
   margin-bottom: 1.25rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mr-3{
+  margin-right: 0.75rem;
 }
 
 .mt-10{
@@ -2197,12 +2221,16 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 1.25rem;
 }
 
-.mr-2{
-  margin-right: 0.5rem;
+.mt-12{
+  margin-top: 3rem;
 }
 
-.mr-3{
-  margin-right: 0.75rem;
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
 }
 
 .flex{
@@ -2253,12 +2281,12 @@ details.collapse summary::-webkit-details-marker{
   width: 100%;
 }
 
-.min-w-\[340px\]{
-  min-width: 340px;
-}
-
 .max-w-60{
   max-width: 15rem;
+}
+
+.max-w-\[340px\]{
+  max-width: 340px;
 }
 
 .max-w-\[500px\]{
@@ -2267,10 +2295,6 @@ details.collapse summary::-webkit-details-marker{
 
 .max-w-\[600px\]{
   max-width: 600px;
-}
-
-.max-w-\[340px\]{
-  max-width: 340px;
 }
 
 .basis-2\/5{
@@ -2297,10 +2321,6 @@ details.collapse summary::-webkit-details-marker{
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-2{
@@ -2346,11 +2366,6 @@ details.collapse summary::-webkit-details-marker{
        column-gap: 1.5rem;
 }
 
-.gap-x-36{
-  -moz-column-gap: 9rem;
-       column-gap: 9rem;
-}
-
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -2391,18 +2406,6 @@ details.collapse summary::-webkit-details-marker{
   --tw-space-y-reverse: 0;
   margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
-}
-
-.space-y-8 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
-.space-y-10 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -2478,23 +2481,6 @@ details.collapse summary::-webkit-details-marker{
   padding-bottom: 1.25rem;
 }
 
-.py-28{
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.pt-5{
-  padding-top: 1.25rem;
-}
-
-.pb-24{
-  padding-bottom: 6rem;
-}
-
-.pt-28{
-  padding-top: 7rem;
-}
-
 .pb-32{
   padding-bottom: 8rem;
 }
@@ -2503,16 +2489,16 @@ details.collapse summary::-webkit-details-marker{
   padding-top: 6rem;
 }
 
+.pt-5{
+  padding-top: 1.25rem;
+}
+
 .text-center{
   text-align: center;
 }
 
 .align-bottom{
   vertical-align: bottom;
-}
-
-.font-manrope{
-  font-family: Manrope, sans - serif;
 }
 
 .text-2xl{
@@ -2543,10 +2529,6 @@ details.collapse summary::-webkit-details-marker{
 
 .font-semibold{
   font-weight: 600;
-}
-
-.leading-7{
-  line-height: 1.75rem;
 }
 
 .text-\[\#e3dfde\]{
@@ -2714,14 +2696,14 @@ details.collapse summary::-webkit-details-marker{
     justify-content: center;
   }
 
-  .md\:gap-x-5{
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
-  }
-
   .md\:gap-x-36{
     -moz-column-gap: 9rem;
          column-gap: 9rem;
+  }
+
+  .md\:gap-x-5{
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
   }
 
   .md\:space-x-1 > :not([hidden]) ~ :not([hidden]){
@@ -2764,16 +2746,6 @@ details.collapse summary::-webkit-details-marker{
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
   }
-}
-
-.\[\&\>\*\]\:mb-5>*{
-  margin-bottom: 1.25rem;
-}
-
-.\[\&\>\*\]\:space-y-5>* > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 @media (min-width: 786px){
