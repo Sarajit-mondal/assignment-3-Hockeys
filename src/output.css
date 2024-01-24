@@ -642,28 +642,35 @@ html{
   --bc: 0.746477 0.0216 264.435964;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: Manrope, sans - serif;
   line-height: 1.75rem;
 }
 
-header,
-  main{
+main,
+  nav,
+  #banner{
   margin-left: auto;
   margin-right: auto;
   width: 91.666667%;
 }
 
 @media (min-width: 786px){
-  header,
-  main{
+  main,
+  nav,
+  #banner{
     width: 80%;
   }
 }
 
 @media (min-width: 1020px){
-  header,
-  main{
+  main,
+  nav,
+  #banner{
     max-width: 1170px;
   }
 }
@@ -2113,6 +2120,10 @@ details.collapse summary::-webkit-details-marker{
   visibility: collapse;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -2125,36 +2136,36 @@ details.collapse summary::-webkit-details-marker{
   bottom: 0px;
 }
 
-.bottom-7{
-  bottom: 1.75rem;
-}
-
-.left-7{
-  left: 1.75rem;
-}
-
-.top-20{
-  top: 5rem;
-}
-
-.bottom-\[10\%\]{
-  bottom: 10%;
-}
-
-.left-\[10\%\]{
-  left: 10%;
-}
-
 .bottom-\[6\%\]{
   bottom: 6%;
+}
+
+.left-0{
+  left: 0px;
 }
 
 .left-\[6\%\]{
   left: 6%;
 }
 
+.right-0{
+  right: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-20{
+  top: 5rem;
+}
+
 .z-10{
   z-index: 10;
+}
+
+.z-20{
+  z-index: 20;
 }
 
 .col-span-1{
@@ -2170,19 +2181,13 @@ details.collapse summary::-webkit-details-marker{
   margin-right: auto;
 }
 
-.my-16{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.mb-20{
+  margin-bottom: 5rem;
 }
 
 .mb-32{
@@ -2209,6 +2214,14 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 2.5rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -2219,18 +2232,6 @@ details.collapse summary::-webkit-details-marker{
 
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
-}
-
-.mt-14{
-  margin-top: 3.5rem;
 }
 
 .flex{
@@ -2491,6 +2492,10 @@ details.collapse summary::-webkit-details-marker{
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pt-\[18vh\]{
+  padding-top: 18vh;
 }
 
 .text-center{
