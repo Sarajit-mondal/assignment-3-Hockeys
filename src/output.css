@@ -2176,6 +2176,10 @@ details.collapse summary::-webkit-details-marker{
   grid-column: span 2 / span 2;
 }
 
+.m-16{
+  margin: 4rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -2445,6 +2449,11 @@ details.collapse summary::-webkit-details-marker{
 }
 
 .bg-light_color{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
